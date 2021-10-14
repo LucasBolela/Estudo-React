@@ -1,0 +1,65 @@
+React:
+    Documentação: https://pt-br.reactjs.org/
+
+    O que é?
+    React é uma biblioteca JavaScript para criar interfaces de usuário.
+
+    O ReactJs é baseado em componentes, portanto cria componentes, utilizando a lógica em JavaScript, que gerenciam seu próprio estado.
+
+    Pontos positivos de se usar React:
+        -Facilita a criação de UIs interativas;
+        -Utiliza estados dentro da aplicação;
+        -Funciona como SPA (Single Page Aplication);
+        -Com Views declarativas o código fica mais limpo;
+        -Por utilizar a escrita em JavaScript, pode facilmente passar diversos tipos de dados ao longo da aplicação e ainda manter o estado fora do DOM;
+
+    Como funciona um componente?
+    Os componentes implementam um método "render()" que recebe os dados a ser exibidos, e esses dados de entrada podem ser acessados via "prop".
+    Além de receber, um componente pode manter dados do "state" interno e quando alterados, o código renderizado será atualizado.
+
+
+React com Redux:
+
+    Library de arquitetura para aplicacoes React e React native, onde precisa gerenciar os dados da aplicação.
+    Ela soluciona o problema de compartilhamento de estados entre componentes, tornando-o unidirecional.
+
+    Documentação: https://redux.js.org/
+
+    https://miro.medium.com/max/700/1*JfU2tL6Pik6VGVE2hkNbjg.png
+
+    Visualizando a imagem é possível notar como o redux atua na estrutura do projeto, ele simplifica a evolução de estados de uma aplicação que possui múltiplos estadas, tirando a responsabilidade de cada componente e centralizando em uma Store.
+
+    Exemplo de fluxo de evolução de estado:
+    https://miro.medium.com/max/700/1*BcmtHcMHN6PT7IniIWniHg.png 
+
+    O fluxo é composto por 4 partes: 
+
+    -Store: container que armazena e centraliza o estado geral da aplicação. É imutável.
+
+    -Actions: São fonte de informações enviadas da aplicação para a Store, disparadas pelas Action Creators, ao ser executadas ativam os reducers.
+
+    -Reducers: Recebem e tratam as informações para que sejam ou não enviadas para a Store (Funciona como uum middleware)
+
+    -Conexão dos componentes ao Redux: para poderem se inscrever à evolução de estados da Store ou disparar eventos para evoluí-la.
+
+    Como funciona?
+    O Redux funciona como se todos os componentes se comunicassem com ele, e ele distribui todas as informações entre os componentes que precisam dela.
+
+    Porque utilizar Redux?
+    Ajuda a controlar a aplicação baseado em informações de entrada ou regras pré-estabelecidas, lida com side effects, e sua utilidade é quando está se perdendo dentro da aplicação, centralizando as regras de negócio em um único local
+
+    Principais parametros passados no connect:
+        - mapStateToProps: recebe o estado e retorna o objeto
+        - mapDispatchToProps: recebe ações como parâmetros e as retorna de uma maneira simplificada e organizada
+
+    Diferenca do Redux para Context API
+
+    *Prop drealing
+
+React com Styled Components:
+
+    O Styled Components é uma biblioteca feita para React/React Native que permite a criação de componentes estilizados garantindo várias melhoras na produtividade com integrações aos funcionamentos do React em si.
+
+    A utilização do styled-components se da por componentes Reacts criados com uma estilização, substituindo as tags padrão (Header, h1, div) pelo componente criado.
+
+    A estilização é definida em um arquivo .js e sua sintaxe utiliza Template Literals, com padrao parecido ao Sass e Less, podendo fazer herancas entre componentes.
