@@ -8,7 +8,7 @@ import { Button, Title, SidebarContainer, ModuleContainer } from '../../styles';
 
 import * as CourseActions from '../../store/actions/course';
 
-let value = -400;
+let value = 0;
 
 const Sidebar = ({ modules, toggleLesson }) => (
     <SidebarContainer right={value} onClick={() => value = value ? 0 : -400}>
